@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="创建型\" />
     <Folder Include="行为型\" />
     <Folder Include="结构型\" />
   </ItemGroup>
