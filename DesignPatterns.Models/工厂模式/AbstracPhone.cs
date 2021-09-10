@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Models.工厂模式
 {
+    /// <summary>
+    /// 抽象手机类
+    /// </summary>
     public abstract class AbstracPhone
     {
         /// <summary>
