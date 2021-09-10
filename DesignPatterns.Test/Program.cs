@@ -1,5 +1,7 @@
 ﻿using DesignPatterns.Library.创建型;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DesignPatterns.Test
 {
@@ -35,7 +37,8 @@ namespace DesignPatterns.Test
             }
             #endregion
 
-
+            string[] aa = null;
+            var a = aa.AsEnumerable();
 
             Console.WriteLine("Hello World!");
         }
