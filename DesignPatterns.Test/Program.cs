@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Library.创建型;
+using DesignPatterns.Models.工厂方法;
 using DesignPatterns.Models.工厂模式;
 using System;
 using System.Collections.Generic;
@@ -52,13 +53,22 @@ namespace DesignPatterns.Test
             #endregion
 
             #region 使用简单工厂
-            AbstracPhone huaWei = SimpleFactory.CreatePhone(PhoneTypeEnum.HuaWei);
-            huaWei.Call();
-            AbstracPhone xiaoMi = SimpleFactory.CreatePhone(PhoneTypeEnum.XiaoMi);
-            xiaoMi.Call();
-
+            //AbstracPhone huaWei = SimpleFactory.CreatePhone(PhoneTypeEnum.HuaWei);
+            //huaWei.Call();
+            //AbstracPhone xiaoMi = SimpleFactory.CreatePhone(PhoneTypeEnum.XiaoMi);
+            //xiaoMi.Call();
+            #endregion
             #endregion
 
+            #region 工厂方法测试
+            {
+                // 比亚迪工厂造比亚迪汽车
+                ICarFactory bydFactory = new BydFactory();
+                bydFactory.GetCar().ShowCar();
+                // 哈佛工厂造哈佛汽车
+                ICarFactory havalFactory = new HavalFactory();
+                havalFactory.GetCar().ShowCar();
+            }
             #endregion
 
             Console.WriteLine("Hello World!");
