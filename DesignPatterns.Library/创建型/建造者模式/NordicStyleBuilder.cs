@@ -9,7 +9,7 @@ namespace DesignPatterns.Library.创建型.建造者模式
     /// <summary>
     /// 具体建造者：北欧风格
     /// </summary>
-    public class NordicStyleBuilder : IBuilder
+    public class NordicStyleBuilder : AbstractBuilder
     {
         public override void InstallWardrobe()
         {

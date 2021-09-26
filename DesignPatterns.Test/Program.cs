@@ -88,7 +88,7 @@ namespace DesignPatterns.Test
 
             #region 建造者模式测试
             {
-                IBuilder builder = null;
+                AbstractBuilder builder = null;
                 Director director = null;
                 
                 builder = new NordicStyleBuilder();

@@ -11,8 +11,8 @@ namespace DesignPatterns.Library.创建型.建造者模式
     /// </summary>
     public class Director
     {
-        private IBuilder builder;
-        public Director(IBuilder builder)
+        private AbstractBuilder builder;
+        public Director(AbstractBuilder builder)
         {
             this.builder = builder;
         }

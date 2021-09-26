@@ -9,7 +9,7 @@ namespace DesignPatterns.Library.创建型.建造者模式
     /// <summary>
     /// 具体建造者：现代风格
     /// </summary>
-    public class SmartnessStyleBuilder : IBuilder
+    public class SmartnessStyleBuilder : AbstractBuilder
     {
         public override void InstallWardrobe()
         {

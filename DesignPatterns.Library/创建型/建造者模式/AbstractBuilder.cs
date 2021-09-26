@@ -9,7 +9,7 @@ namespace DesignPatterns.Library.创建型.建造者模式
     /// <summary>
     /// 抽象建造者
     /// </summary>
-    public abstract class IBuilder
+    public abstract class AbstractBuilder
     {
         /// <summary>
         /// 将具体产品（房子）聚合进来
