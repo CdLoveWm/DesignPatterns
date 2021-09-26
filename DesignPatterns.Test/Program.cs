@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Library.创建型;
+using DesignPatterns.Library.创建型.建造者模式;
 using DesignPatterns.Library.创建型.抽象工厂;
 using DesignPatterns.Library.工厂方法;
 using DesignPatterns.Library.工厂模式;
@@ -73,15 +74,32 @@ namespace DesignPatterns.Test
             #endregion
 
             #region 抽象工厂模式测试
-            {
-                IFactory factory = null;
-                factory = new HuaWeiFactory();
-                factory.CreateComputer().Show();
-                factory.CreatePhone().Show();
+            //{
+            //    IFactory factory = null;
+            //    factory = new HuaWeiFactory();
+            //    factory.CreateComputer().Show();
+            //    factory.CreatePhone().Show();
 
-                factory = new XiaoMiFactory();
-                factory.CreateComputer().Show();
-                factory.CreatePhone().Show();
+            //    factory = new XiaoMiFactory();
+            //    factory.CreateComputer().Show();
+            //    factory.CreatePhone().Show();
+            //}
+            #endregion
+
+            #region 建造者模式测试
+            {
+                IBuilder builder = null;
+                Director director = null;
+                
+                builder = new NordicStyleBuilder();
+                director = new Director(builder);
+                director.GetHouse();
+                Console.WriteLine("北欧风格装修完成");
+
+                builder = new SmartnessStyleBuilder();
+                director = new Director(builder);
+                director.GetHouse();
+                Console.WriteLine("现代风格装修完成");
             }
             #endregion
 
