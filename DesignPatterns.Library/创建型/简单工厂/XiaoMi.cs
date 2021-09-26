@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Library
+namespace DesignPatterns.Library.工厂模式
 {
     /// <summary>
-    /// 工厂方法模式
+    /// 小米手机
     /// </summary>
-    public class FactoryMethod
+    public class XiaoMi : AbstracPhone
     {
-
+        protected override string PhoneType => nameof(XiaoMi);
     }
 }

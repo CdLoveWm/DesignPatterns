@@ -9,8 +9,4 @@
     <Folder Include="结构型\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DesignPatterns.Models\DesignPatterns.Models.csproj" />
-  </ItemGroup>
-
 </Project>

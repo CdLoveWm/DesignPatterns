@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Models.工厂方法
+namespace DesignPatterns.Library.工厂方法
 {
     /// <summary>
-    /// 汽车抽象
+    /// 汽车工厂抽象
     /// </summary>
-    public interface ICar
+    public interface ICarFactory
     {
         /// <summary>
-        /// 展示汽车
+        /// 获取具体汽车
         /// </summary>
-        void ShowCar();
+        /// <returns></returns>
+        ICar GetCar();
     }
 }

@@ -1,4 +1,4 @@
-﻿using DesignPatterns.Models.工厂模式;
+﻿using DesignPatterns.Library.工厂模式;
 using System;
 using System.Collections.Generic;
 using System.Linq;

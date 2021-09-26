@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Models.工厂模式
+namespace DesignPatterns.Library.工厂模式
 {
     /// <summary>
     /// 华为手机

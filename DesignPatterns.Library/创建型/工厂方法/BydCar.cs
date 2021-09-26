@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Models.工厂方法
+namespace DesignPatterns.Library.工厂方法
 {
     /// <summary>
-    /// 比亚迪汽车工厂
+    /// 比亚迪汽车
     /// </summary>
-    public class BydFactory : ICarFactory
+    public class BydCar : ICar
     {
-        public ICar GetCar()
+        public void ShowCar()
         {
-            return new BydCar();
+            Console.WriteLine("比亚迪汽车");
         }
     }
 }
