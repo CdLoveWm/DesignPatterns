@@ -1,4 +1,5 @@
 ﻿using DesignPatterns.Library.创建型;
+using DesignPatterns.Library.创建型.抽象工厂;
 using DesignPatterns.Library.工厂方法;
 using DesignPatterns.Library.工厂模式;
 using System;
@@ -61,17 +62,30 @@ namespace DesignPatterns.Test
             #endregion
 
             #region 工厂方法测试
+            //{
+            //    // 比亚迪工厂造比亚迪汽车
+            //    ICarFactory bydFactory = new BydFactory();
+            //    bydFactory.GetCar().ShowCar();
+            //    // 哈佛工厂造哈佛汽车
+            //    ICarFactory havalFactory = new HavalFactory();
+            //    havalFactory.GetCar().ShowCar();
+            //}
+            #endregion
+
+            #region 抽象工厂模式测试
             {
-                // 比亚迪工厂造比亚迪汽车
-                ICarFactory bydFactory = new BydFactory();
-                bydFactory.GetCar().ShowCar();
-                // 哈佛工厂造哈佛汽车
-                ICarFactory havalFactory = new HavalFactory();
-                havalFactory.GetCar().ShowCar();
+                IFactory factory = null;
+                factory = new HuaWeiFactory();
+                factory.CreateComputer().Show();
+                factory.CreatePhone().Show();
+
+                factory = new XiaoMiFactory();
+                factory.CreateComputer().Show();
+                factory.CreatePhone().Show();
             }
             #endregion
 
-            Console.WriteLine("Hello World!");
+            Console.ReadKey();
         }
     }
 }
