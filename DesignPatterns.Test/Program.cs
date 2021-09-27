@@ -3,6 +3,7 @@ using DesignPatterns.Library.创建型.建造者模式;
 using DesignPatterns.Library.创建型.抽象工厂;
 using DesignPatterns.Library.工厂方法;
 using DesignPatterns.Library.工厂模式;
+using DesignPatterns.Library.结构型.桥接模式;
 using DesignPatterns.Library.结构型.适配器模式;
 using System;
 using System.Collections.Generic;
@@ -91,7 +92,7 @@ namespace DesignPatterns.Test
             //{
             //    AbstractBuilder builder = null;
             //    Director director = null;
-                
+
             //    builder = new NordicStyleBuilder();
             //    director = new Director(builder);
             //    director.GetHouse();
@@ -105,9 +106,34 @@ namespace DesignPatterns.Test
             #endregion
 
             #region 适配器模式
+            //{
+            //    ITarget5V adpter = new Adapter5V();
+            //    adpter.Adapt5V();
+            //}
+            #endregion
+
+            #region 桥接模式
             {
-                ITarget5V adpter = new Adapter5V();
-                adpter.Adapt5V();
+                IColor color = null;
+                AbstractShape shape = null;
+                // 红色矩形
+                color = new RedColor();
+                shape = new Rectangle(color);
+                shape.ShowSpecificShape();
+                // 黄色矩形
+                color = new YellowColor();
+                shape = new Rectangle(color);
+                shape.ShowSpecificShape();
+                // 红色圆形
+                color = new RedColor();
+                shape = new Circle(color);
+                shape.ShowSpecificShape();
+                // 黄色圆形
+                color = new YellowColor();
+                shape = new Circle(color);
+                shape.ShowSpecificShape();
+
+
             }
             #endregion
 
