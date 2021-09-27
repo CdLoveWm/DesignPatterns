@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="行为型\" />
-    <Folder Include="结构型\" />
   </ItemGroup>
 
 </Project>

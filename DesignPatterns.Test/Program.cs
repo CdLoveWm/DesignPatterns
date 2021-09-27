@@ -3,6 +3,7 @@ using DesignPatterns.Library.创建型.建造者模式;
 using DesignPatterns.Library.创建型.抽象工厂;
 using DesignPatterns.Library.工厂方法;
 using DesignPatterns.Library.工厂模式;
+using DesignPatterns.Library.结构型.适配器模式;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -87,19 +88,26 @@ namespace DesignPatterns.Test
             #endregion
 
             #region 建造者模式测试
-            {
-                AbstractBuilder builder = null;
-                Director director = null;
+            //{
+            //    AbstractBuilder builder = null;
+            //    Director director = null;
                 
-                builder = new NordicStyleBuilder();
-                director = new Director(builder);
-                director.GetHouse();
-                Console.WriteLine("北欧风格装修完成");
+            //    builder = new NordicStyleBuilder();
+            //    director = new Director(builder);
+            //    director.GetHouse();
+            //    Console.WriteLine("北欧风格装修完成");
 
-                builder = new SmartnessStyleBuilder();
-                director = new Director(builder);
-                director.GetHouse();
-                Console.WriteLine("现代风格装修完成");
+            //    builder = new SmartnessStyleBuilder();
+            //    director = new Director(builder);
+            //    director.GetHouse();
+            //    Console.WriteLine("现代风格装修完成");
+            //}
+            #endregion
+
+            #region 适配器模式
+            {
+                ITarget5V adpter = new Adapter5V();
+                adpter.Adapt5V();
             }
             #endregion
 
