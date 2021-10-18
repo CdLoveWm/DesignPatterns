@@ -3,6 +3,7 @@ using DesignPatterns.Library.创建型.建造者模式;
 using DesignPatterns.Library.创建型.抽象工厂;
 using DesignPatterns.Library.工厂方法;
 using DesignPatterns.Library.工厂模式;
+using DesignPatterns.Library.结构型.代理模式;
 using DesignPatterns.Library.结构型.桥接模式;
 using DesignPatterns.Library.结构型.适配器模式;
 using System;
@@ -113,28 +114,39 @@ namespace DesignPatterns.Test
             #endregion
 
             #region 桥接模式
-            {
-                IColor color = null;
-                AbstractShape shape = null;
-                // 红色矩形
-                color = new RedColor();
-                shape = new Rectangle(color);
-                shape.ShowSpecificShape();
-                // 黄色矩形
-                color = new YellowColor();
-                shape = new Rectangle(color);
-                shape.ShowSpecificShape();
-                // 红色圆形
-                color = new RedColor();
-                shape = new Circle(color);
-                shape.ShowSpecificShape();
-                // 黄色圆形
-                color = new YellowColor();
-                shape = new Circle(color);
-                shape.ShowSpecificShape();
+            //{
+            //    IColor color = null;
+            //    AbstractShape shape = null;
+            //    // 红色矩形
+            //    color = new RedColor();
+            //    shape = new Rectangle(color);
+            //    shape.ShowSpecificShape();
+            //    // 黄色矩形
+            //    color = new YellowColor();
+            //    shape = new Rectangle(color);
+            //    shape.ShowSpecificShape();
+            //    // 红色圆形
+            //    color = new RedColor();
+            //    shape = new Circle(color);
+            //    shape.ShowSpecificShape();
+            //    // 黄色圆形
+            //    color = new YellowColor();
+            //    shape = new Circle(color);
+            //    shape.ShowSpecificShape();
 
 
-            }
+            //}
+            #endregion
+
+            #region 代理模式
+
+            //// 之前的微信支付
+            //IPayment payment = new WeiXinPayment();
+            //payment.Pay();
+            //Console.WriteLine("********************");
+            //// 代理模式下的微信支付
+            //IPayment proxy = new WeiXinPaymentProxy();
+            //proxy.Pay();
             #endregion
 
             Console.ReadKey();
