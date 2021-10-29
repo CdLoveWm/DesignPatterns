@@ -5,6 +5,7 @@ using DesignPatterns.Library.工厂方法;
 using DesignPatterns.Library.工厂模式;
 using DesignPatterns.Library.结构型.代理模式;
 using DesignPatterns.Library.结构型.桥接模式;
+using DesignPatterns.Library.结构型.装饰器模式;
 using DesignPatterns.Library.结构型.适配器模式;
 using System;
 using System.Collections.Generic;
@@ -147,6 +148,26 @@ namespace DesignPatterns.Test
             //// 代理模式下的微信支付
             //IPayment proxy = new WeiXinPaymentProxy();
             //proxy.Pay();
+            #endregion
+
+            #region 装饰器设计模式
+
+            IDog dog = new Dog();
+            dog.Display();
+            Console.WriteLine("*******************************");
+
+            IDog clothesDog = new ClothesDecorator(dog);
+            clothesDog.Display();
+            Console.WriteLine("*******************************");
+
+            IDog shoesDog = new ShoesDecorator(dog);
+            shoesDog.Display();
+            Console.WriteLine("*******************************");
+
+            IDog allDog = new ShoesDecorator(clothesDog);
+            allDog.Display();
+            Console.WriteLine("*******************************");
+
             #endregion
 
             Console.ReadKey();
