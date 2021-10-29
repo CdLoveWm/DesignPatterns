@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Library.结构型.装饰器模式
 {
+    /// <summary>
+    /// 鞋子装饰
+    /// </summary>
     public class ShoesDecorator : Decorator
     {
         public ShoesDecorator(IDog dog) : base(dog)

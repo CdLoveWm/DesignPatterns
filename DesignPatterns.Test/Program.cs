@@ -152,21 +152,21 @@ namespace DesignPatterns.Test
 
             #region 装饰器设计模式
 
-            IDog dog = new Dog();
-            dog.Display();
-            Console.WriteLine("*******************************");
+            //IDog dog = new Dog();
+            //dog.Display();
+            //Console.WriteLine("*******************************");
 
-            IDog clothesDog = new ClothesDecorator(dog);
-            clothesDog.Display();
-            Console.WriteLine("*******************************");
+            //IDog clothesDog = new ClothesDecorator(dog);
+            //clothesDog.Display();
+            //Console.WriteLine("*******************************");
 
-            IDog shoesDog = new ShoesDecorator(dog);
-            shoesDog.Display();
-            Console.WriteLine("*******************************");
+            //IDog shoesDog = new ShoesDecorator(dog);
+            //shoesDog.Display();
+            //Console.WriteLine("*******************************");
 
-            IDog allDog = new ShoesDecorator(clothesDog);
-            allDog.Display();
-            Console.WriteLine("*******************************");
+            //IDog allDog = new ShoesDecorator(clothesDog);
+            //allDog.Display();
+            //Console.WriteLine("*******************************");
 
             #endregion
 

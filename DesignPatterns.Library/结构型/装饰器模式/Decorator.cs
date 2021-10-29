@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Library.结构型.装饰器模式
 {
+    /// <summary>
+    /// 装饰器
+    /// </summary>
     public abstract class Decorator : IDog
     {
         private IDog _dog;
