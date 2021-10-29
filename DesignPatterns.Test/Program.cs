@@ -4,6 +4,7 @@ using DesignPatterns.Library.创建型.抽象工厂;
 using DesignPatterns.Library.工厂方法;
 using DesignPatterns.Library.工厂模式;
 using DesignPatterns.Library.结构型.代理模式;
+using DesignPatterns.Library.结构型.外观模式;
 using DesignPatterns.Library.结构型.桥接模式;
 using DesignPatterns.Library.结构型.装饰器模式;
 using DesignPatterns.Library.结构型.适配器模式;
@@ -167,6 +168,15 @@ namespace DesignPatterns.Test
             //IDog allDog = new ShoesDecorator(clothesDog);
             //allDog.Display();
             //Console.WriteLine("*******************************");
+
+            #endregion
+
+            #region 外观模式
+
+            //Waiter waiter = new Waiter();
+            //waiter.Order();
+            //waiter.AddTea();
+            //waiter.AddSoup();
 
             #endregion
 
