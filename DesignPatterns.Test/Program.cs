@@ -3,6 +3,7 @@ using DesignPatterns.Library.创建型.建造者模式;
 using DesignPatterns.Library.创建型.抽象工厂;
 using DesignPatterns.Library.工厂方法;
 using DesignPatterns.Library.工厂模式;
+using DesignPatterns.Library.结构型.享元模式;
 using DesignPatterns.Library.结构型.代理模式;
 using DesignPatterns.Library.结构型.外观模式;
 using DesignPatterns.Library.结构型.桥接模式;
@@ -177,6 +178,30 @@ namespace DesignPatterns.Test
             //waiter.Order();
             //waiter.AddTea();
             //waiter.AddSoup();
+
+            #endregion
+
+            #region 享元模式
+
+            //string connectionStr = "server=10.21.1.36;user id=sa;password=#123;persistsecurityinfo=True;database=test";
+            //IConnection connection1 = ConnectionFactory.GetConnection(connectionStr);
+            //connection1.PrintConnectionStr();
+            //Console.WriteLine("***************************");
+            //IConnection connection2 = ConnectionFactory.GetConnection(connectionStr);
+            //connection2.PrintConnectionStr();
+            //Console.WriteLine("***************************");
+            //IConnection connection3 = ConnectionFactory.GetConnection(connectionStr);
+            //connection3.PrintConnectionStr();
+
+            //string connectionStr1 = "server=10.45.11.36;user id=sa;password=12;persistsecurityinfo=True;database=test";
+            //IConnection connection4 = ConnectionFactory.GetConnection(connectionStr1);
+            //connection1.PrintConnectionStr();
+            //Console.WriteLine("***************************");
+            //IConnection connection5 = ConnectionFactory.GetConnection(connectionStr1);
+            //connection2.PrintConnectionStr();
+            //Console.WriteLine("***************************");
+            //IConnection connection6 = ConnectionFactory.GetConnection(connectionStr1);
+            //connection3.PrintConnectionStr();
 
             #endregion
 
