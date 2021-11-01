@@ -11,6 +11,7 @@ using DesignPatterns.Library.结构型.组合模式;
 using DesignPatterns.Library.结构型.装饰器模式;
 using DesignPatterns.Library.结构型.适配器模式;
 using DesignPatterns.Library.行为型.模板方法模式;
+using DesignPatterns.Library.行为型.策略模式;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,8 @@ namespace DesignPatterns.Test
     {
         static void Main(string[] args)
         {
+            #region 创建型设计模式
+
             #region 原型模式测试
 
             #region 浅拷贝测试
@@ -110,6 +113,10 @@ namespace DesignPatterns.Test
             //    Console.WriteLine("现代风格装修完成");
             //}
             #endregion
+
+            #endregion
+
+            #region 结构型设计模式
 
             #region 适配器模式
             //{
@@ -231,6 +238,10 @@ namespace DesignPatterns.Test
 
             #endregion
 
+            #endregion
+
+            #region 行为型设计模式
+
             #region 模板方法
 
             //AbstractDrivingExamine shenZhen = new ShenZhenDrivingExamine();
@@ -238,6 +249,20 @@ namespace DesignPatterns.Test
             //Console.WriteLine("*************************");
             //AbstractDrivingExamine qingYuan = new QingYuanDrivingExamine();
             //qingYuan.Exam();
+
+            #endregion
+
+            #region 策略模式
+
+            IStrategy airplane = new AirplaneStrategy();
+            Travel travel1 = new Travel(airplane);
+            travel1.Depart();
+            Console.WriteLine("*************************");
+            IStrategy train = new TrainStrategy();
+            Travel travel2 = new Travel(train);
+            travel2.Depart();
+
+            #endregion
 
             #endregion
 
