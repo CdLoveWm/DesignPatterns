@@ -7,6 +7,7 @@ using DesignPatterns.Library.结构型.享元模式;
 using DesignPatterns.Library.结构型.代理模式;
 using DesignPatterns.Library.结构型.外观模式;
 using DesignPatterns.Library.结构型.桥接模式;
+using DesignPatterns.Library.结构型.组合模式;
 using DesignPatterns.Library.结构型.装饰器模式;
 using DesignPatterns.Library.结构型.适配器模式;
 using System;
@@ -202,6 +203,30 @@ namespace DesignPatterns.Test
             //Console.WriteLine("***************************");
             //IConnection connection6 = ConnectionFactory.GetConnection(connectionStr1);
             //connection3.PrintConnectionStr();
+
+            #endregion
+
+            #region 组合模式
+
+            //Folder folder1 = new Folder("文件夹1");
+            //Folder folder2 = new Folder("文件夹2");
+            //Folder folder3 = new Folder("文件夹3");
+
+            //File file1 = new File("文件1");
+            //File file2 = new File("文件2");
+            //File file3 = new File("文件3");
+            //File file4 = new File("文件4");
+
+            //folder1.Add(file1);
+            //folder1.Add(folder2);
+            //folder2.Add(folder3);
+            //folder2.Add(file2);
+            //folder3.Add(file3);
+            //folder3.Add(file4);
+            //folder1.Show();
+            //Console.WriteLine("***********************");  
+            //folder3.Remove(file3);
+            //folder1.Show();
 
             #endregion
 
