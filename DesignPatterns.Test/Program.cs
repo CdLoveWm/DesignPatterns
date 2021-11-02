@@ -10,6 +10,7 @@ using DesignPatterns.Library.结构型.桥接模式;
 using DesignPatterns.Library.结构型.组合模式;
 using DesignPatterns.Library.结构型.装饰器模式;
 using DesignPatterns.Library.结构型.适配器模式;
+using DesignPatterns.Library.行为型.命令模式;
 using DesignPatterns.Library.行为型.模板方法模式;
 using DesignPatterns.Library.行为型.策略模式;
 using System;
@@ -254,13 +255,28 @@ namespace DesignPatterns.Test
 
             #region 策略模式
 
-            IStrategy airplane = new AirplaneStrategy();
-            Travel travel1 = new Travel(airplane);
-            travel1.Depart();
-            Console.WriteLine("*************************");
-            IStrategy train = new TrainStrategy();
-            Travel travel2 = new Travel(train);
-            travel2.Depart();
+            //IStrategy airplane = new AirplaneStrategy();
+            //Travel travel1 = new Travel(airplane);
+            //travel1.Depart();
+            //Console.WriteLine("*************************");
+            //IStrategy train = new TrainStrategy();
+            //Travel travel2 = new Travel(train);
+            //travel2.Depart();
+
+            #endregion
+
+            #region 命令模式
+
+            //Television tv = new Television();
+            //ICommand startCommand = new StartCommand(tv);
+            //RemoteControl control = new RemoteControl(startCommand);
+            //control.Action();
+            
+            //Console.WriteLine("*************************");
+
+            //ICommand closeCommand = new CloseCommand(tv);
+            //RemoteControl control1 = new RemoteControl(closeCommand);
+            //control1.Action();
 
             #endregion
 
