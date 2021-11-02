@@ -13,6 +13,7 @@ using DesignPatterns.Library.结构型.适配器模式;
 using DesignPatterns.Library.行为型.命令模式;
 using DesignPatterns.Library.行为型.模板方法模式;
 using DesignPatterns.Library.行为型.策略模式;
+using DesignPatterns.Library.行为型.责任链模式;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -271,12 +272,25 @@ namespace DesignPatterns.Test
             //ICommand startCommand = new StartCommand(tv);
             //RemoteControl control = new RemoteControl(startCommand);
             //control.Action();
-            
+
             //Console.WriteLine("*************************");
 
             //ICommand closeCommand = new CloseCommand(tv);
             //RemoteControl control1 = new RemoteControl(closeCommand);
             //control1.Action();
+
+            #endregion
+
+            #region 责任链模式
+
+            AbstractLeader director = new RDDiretor(null);
+            AbstractLeader manager = new Manager(director);
+            AbstractLeader leader = new DirectLeader(manager);
+            leader.Approve(2);
+            Console.WriteLine("*********************");
+            leader.Approve(5);
+            Console.WriteLine("*********************");
+            leader.Approve(8);
 
             #endregion
 
