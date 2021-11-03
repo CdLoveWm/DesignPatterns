@@ -12,6 +12,7 @@ using DesignPatterns.Library.结构型.装饰器模式;
 using DesignPatterns.Library.结构型.适配器模式;
 using DesignPatterns.Library.行为型.命令模式;
 using DesignPatterns.Library.行为型.模板方法模式;
+using DesignPatterns.Library.行为型.状态模式;
 using DesignPatterns.Library.行为型.策略模式;
 using DesignPatterns.Library.行为型.责任链模式;
 using System;
@@ -283,14 +284,27 @@ namespace DesignPatterns.Test
 
             #region 责任链模式
 
-            AbstractLeader director = new RDDiretor(null);
-            AbstractLeader manager = new Manager(director);
-            AbstractLeader leader = new DirectLeader(manager);
-            leader.Approve(2);
-            Console.WriteLine("*********************");
-            leader.Approve(5);
-            Console.WriteLine("*********************");
-            leader.Approve(8);
+            //AbstractLeader director = new RDDiretor(null);
+            //AbstractLeader manager = new Manager(director);
+            //AbstractLeader leader = new DirectLeader(manager);
+            //leader.Approve(2);
+            //Console.WriteLine("*********************");
+            //leader.Approve(5);
+            //Console.WriteLine("*********************");
+            //leader.Approve(8);
+
+            #endregion
+
+            #region 状态模式
+
+            #region 状态模式-红绿灯
+
+            // 状态按照规则自动流转
+            TrafficLightContext context = new TrafficLightContext();
+            for (int i = 0; i < 10; i++)
+                context.Run();
+
+            #endregion
 
             #endregion
 
