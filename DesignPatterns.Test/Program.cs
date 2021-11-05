@@ -10,6 +10,7 @@ using DesignPatterns.Library.结构型.桥接模式;
 using DesignPatterns.Library.结构型.组合模式;
 using DesignPatterns.Library.结构型.装饰器模式;
 using DesignPatterns.Library.结构型.适配器模式;
+using DesignPatterns.Library.行为型.中介者模式;
 using DesignPatterns.Library.行为型.命令模式;
 using DesignPatterns.Library.行为型.模板方法模式;
 using DesignPatterns.Library.行为型.状态模式;
@@ -321,6 +322,18 @@ namespace DesignPatterns.Test
             //cat.Observers += observer.Response;
 
             //cat.Miao();
+            #endregion
+
+            #region 中介者模式
+
+            //AbstractColleague colleague1 = new User1Colleague("100");
+            //AbstractColleague colleague2 = new User2Colleague("200");
+            //AbstractMediator mediator = new MarriageMediator();
+            //mediator.Register(colleague1);
+            //mediator.Register(colleague2);
+            //colleague1.Send();
+            //Console.WriteLine("***************************");
+            //colleague2.Send();
             #endregion
 
             #endregion
