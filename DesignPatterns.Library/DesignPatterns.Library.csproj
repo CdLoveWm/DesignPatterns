@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="行为型\迭代器模式\新文件夹1\" />
+    <Folder Include="行为型\迭代器模式\新文件夹\" />
+  </ItemGroup>
+
 </Project>

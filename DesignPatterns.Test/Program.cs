@@ -18,6 +18,8 @@ using DesignPatterns.Library.行为型.策略模式;
 using DesignPatterns.Library.行为型.观察者模式;
 using DesignPatterns.Library.行为型.责任链模式;
 using DesignPatterns.Library.行为型.迭代器模式;
+using DesignPatterns.Library.行为型.迭代器模式.迭代器模式csharp的实现1;
+using DesignPatterns.Library.行为型.迭代器模式.迭代器模式csharp的实现2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -340,17 +342,42 @@ namespace DesignPatterns.Test
             #region 迭代器模式
 
             #region 迭代器模式自定义实现
-            BookShelfAggregate<string> bookShelf = new BookShelfAggregate<string>();
-            bookShelf.Add("天龙八部");
-            bookShelf.Add("射雕英雄传");
-            bookShelf.Add("神雕侠侣");
-            bookShelf.Add("笑傲江湖");
-            var iterator = bookShelf.GetIterator();
-            while (iterator.HasNext())
+            //BookShelfAggregate<string> bookShelf = new BookShelfAggregate<string>();
+            //bookShelf.Add("天龙八部");
+            //bookShelf.Add("射雕英雄传");
+            //bookShelf.Add("神雕侠侣");
+            //bookShelf.Add("笑傲江湖");
+            //var iterator = bookShelf.GetIterator();
+            //while (iterator.HasNext())
+            //{
+            //    Console.WriteLine(iterator.Next());
+            //}
+            //Console.WriteLine($"第一本书籍：{iterator.First()}");
+            #endregion
+
+            #region 迭代器模式csharp的实现1
+
+            //ColorAggregate color = new ColorAggregate();
+            //color.Add("red");
+            //color.Add("green");
+            //color.Add("yellow");
+            //foreach (var item in color)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region 迭代器模式csharp的实现2
+
+            NameAggregate name = new NameAggregate();
+            name.Add("red1");
+            name.Add("green1");
+            name.Add("yellow1");
+            foreach (var item in name)
             {
-                Console.WriteLine(iterator.Next());
+                Console.WriteLine(item);
             }
-            Console.WriteLine($"第一本书籍：{iterator.First()}");
+
             #endregion
 
 
