@@ -14,6 +14,7 @@ using DesignPatterns.Library.行为型.命令模式;
 using DesignPatterns.Library.行为型.模板方法模式;
 using DesignPatterns.Library.行为型.状态模式;
 using DesignPatterns.Library.行为型.策略模式;
+using DesignPatterns.Library.行为型.观察者模式;
 using DesignPatterns.Library.行为型.责任链模式;
 using System;
 using System.Collections.Generic;
@@ -300,12 +301,26 @@ namespace DesignPatterns.Test
             #region 状态模式-红绿灯
 
             // 状态按照规则自动流转
-            TrafficLightContext context = new TrafficLightContext();
-            for (int i = 0; i < 10; i++)
-                context.Run();
+            //TrafficLightContext context = new TrafficLightContext();
+            //for (int i = 0; i < 10; i++)
+            //    context.Run();
 
             #endregion
 
+            #endregion
+
+            #region 观察者模式
+
+            //CatSubject cat = new CatSubject();
+            //IObserver observer = null;
+            //observer = new BabyObserver();
+            //cat.Observers += observer.Response;
+            //observer = new MouseObserver();
+            //cat.Observers += observer.Response;
+            //observer = new ThiefObserver();
+            //cat.Observers += observer.Response;
+
+            //cat.Miao();
             #endregion
 
             #endregion
