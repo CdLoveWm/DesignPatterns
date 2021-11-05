@@ -17,6 +17,7 @@ using DesignPatterns.Library.行为型.状态模式;
 using DesignPatterns.Library.行为型.策略模式;
 using DesignPatterns.Library.行为型.观察者模式;
 using DesignPatterns.Library.行为型.责任链模式;
+using DesignPatterns.Library.行为型.迭代器模式;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -334,6 +335,25 @@ namespace DesignPatterns.Test
             //colleague1.Send();
             //Console.WriteLine("***************************");
             //colleague2.Send();
+            #endregion
+
+            #region 迭代器模式
+
+            #region 迭代器模式自定义实现
+            BookShelfAggregate<string> bookShelf = new BookShelfAggregate<string>();
+            bookShelf.Add("天龙八部");
+            bookShelf.Add("射雕英雄传");
+            bookShelf.Add("神雕侠侣");
+            bookShelf.Add("笑傲江湖");
+            var iterator = bookShelf.GetIterator();
+            while (iterator.HasNext())
+            {
+                Console.WriteLine(iterator.Next());
+            }
+            Console.WriteLine($"第一本书籍：{iterator.First()}");
+            #endregion
+
+
             #endregion
 
             #endregion
