@@ -16,6 +16,7 @@ using DesignPatterns.Library.行为型.模板方法模式;
 using DesignPatterns.Library.行为型.状态模式;
 using DesignPatterns.Library.行为型.策略模式;
 using DesignPatterns.Library.行为型.观察者模式;
+using DesignPatterns.Library.行为型.访问者模式;
 using DesignPatterns.Library.行为型.责任链模式;
 using DesignPatterns.Library.行为型.迭代器模式;
 using DesignPatterns.Library.行为型.迭代器模式.迭代器模式csharp的实现1;
@@ -369,17 +370,29 @@ namespace DesignPatterns.Test
 
             #region 迭代器模式csharp的实现2
 
-            NameAggregate name = new NameAggregate();
-            name.Add("red1");
-            name.Add("green1");
-            name.Add("yellow1");
-            foreach (var item in name)
-            {
-                Console.WriteLine(item);
-            }
+            //NameAggregate name = new NameAggregate();
+            //name.Add("red1");
+            //name.Add("green1");
+            //name.Add("yellow1");
+            //foreach (var item in name)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
             #endregion
 
+
+            #endregion
+
+            #region 访问者模式
+
+            //Extracivilization extracivilization = new Extracivilization();
+            //extracivilization.AddElement(new AlienElement());
+            //extracivilization.Accept(new BeiJingVisitor());
+            //Console.WriteLine("*********************************");
+            //extracivilization.Accept(new ZheJiangVisitor());
+            //Console.WriteLine("*********************************");
+            //extracivilization.Accept(new GuangDongVisitor());
 
             #endregion
 
